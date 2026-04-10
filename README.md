@@ -47,4 +47,4 @@ The **Public Grievance Tracker** is a full-stack web application that provides a
 ### Submit Complaint form
 <img width="953" height="283" alt="image" src="https://github.com/user-attachments/assets/d3a5f239-aac8-45a3-ac71-ff96a7762ef6" />
 ### Live Demo
-https://app.netlify.com/projects/eclectic-axolotl-d49a7b
+https://public-grievance-tracker.netlify.app/
