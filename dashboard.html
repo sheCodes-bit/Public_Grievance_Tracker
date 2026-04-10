@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grievance Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dashboard.css">
+
+<style>
+body {
+  background: #f4f6f9;
+}
+
+.card-hover {
+  transition: 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.badge-low { background: #28a745; }
+.badge-medium { background: #ffc107; color: black; }
+.badge-high { background: #dc3545; }
+
+.empty-state {
+  text-align: center;
+  color: gray;
+  margin-top: 50px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container-fluid mt-4">
+
+<h2 class="text-center mb-4 fw-bold">
+  Public Grievance Dashboard
+</h2>
+
+<!-- FORM -->
+<div class="card mb-4 shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">Submit a Grievance</h5>
+
+    <form id="grievanceForm">
+
+      <div class="row g-2">
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="title" placeholder="Title" required>
+        </div>
+
+        <div class="col-md-4">
+          <select class="form-select" id="category" required>
+            <option value="">Category</option>
+            <option>Infrastructure</option>
+            <option>Health</option>
+            <option>Education</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <select class="form-select" id="priority" required>
+            <option value="">Priority</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <textarea id="desc" class="form-control" placeholder="Describe your grievance..." rows="3" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success mt-3">
+        <i class="fa-solid fa-paper-plane"></i> Submit
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5>All Grievances</h5>
+
+  <select id="filterPriority" class="form-select w-auto">
+    <option value="all">All Priority</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+</div>
+
+<!-- GRIEVANCES -->
+<div class="row" id="grievanceContainer">
+  <!-- dynamic cards -->
+</div>
+
+<!-- EMPTY STATE -->
+<div id="emptyState" class="empty-state d-none">
+  <i class="fa-solid fa-inbox fa-2x"></i>
+  <p>No grievances found</p>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Public Grievance Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+<!-- LEFT PANEL -->
+
+<div class="left">
+
+<h2 id="left-title">Hello Welcome!</h2>
+
+<p id="left-text">Don't have an account?</p>
+
+<button id="toggle">Register</button>
+
+</div>
+
+
+<!-- RIGHT PANEL -->
+
+<div class="right">
+
+
+<!-- LOGIN FORM -->
+
+<div class="form-section login-section">
+
+<h2>Login</h2>
+
+<div class="input-group">
+<i class="fa-solid fa-user"></i>
+<input type="text" id="loginUser" placeholder="Username">
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-lock"></i>
+<input type="password" id="loginPass" placeholder="Password">
+</div>
+
+<a class="forgot">Forgot Password?</a>
+
+<button id="loginBtn"> Login</button>
+
+<button id="guestBtn" class="guest">Join as Guest</button>
+
+<div class="social">
+
+<p>or continue with</p>
+
+<button class="social-btn google">
+<i class="fa-brands fa-google"></i>
+</button>
+
+<button class="social-btn facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</button>
+
+<button class="social-btn github">
+<i class="fa-brands fa-github"></i>
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- REGISTER FORM -->
+
+<div class="form-section register-section">
+
+<h2> Register</h2>
+
+<div class="input-group">
+<i class="fa-solid fa-user"></i>
+<input type="text" id="regUser" placeholder="Username">
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-envelope"></i>
+<input type="email" id="regEmail" placeholder="Email">
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-lock"></i>
+<input type="password" id="regPass" placeholder="Password">
+</div>
+
+<button id="registerBtn">Register</button>
+
+<button class="guest">Join as Guest</button>
+
+<div class="social">
+
+<p>or sign up with</p>
+
+<button class="social-btn google">
+<i class="fa-brands fa-google"></i>
+</button>
+
+<button class="social-btn facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</button>
+
+<button class="social-btn github">
+<i class="fa-brands fa-github"></i>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- RESET PASSWORD MODAL -->
+
+<div class="modal" id="forgotModal">
+
+<div class="modal-box">
+
+<h3>Reset Password</h3>
+
+<p>Enter your email to receive reset instructions</p>
+
+<input type="email" placeholder="Email Address">
+
+<button id="closeModal">Submit</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
