@@ -39,12 +39,17 @@ The **Public Grievance Tracker** is a full-stack web application that provides a
 <img width="629" height="415" alt="image" src="https://github.com/user-attachments/assets/e0526b06-cf16-4791-b6c6-090ef76161a0" />
 
 ### Dashboard Home Page
-<img width="959" height="476" alt="image" src="https://github.com/user-attachments/assets/80cdb368-d919-4406-867e-75a478597220" />
+<img width="953" height="443" alt="image" src="https://github.com/user-attachments/assets/2a0508cf-9275-45a8-8a3c-385ca707e3a6" />
+
 ### Dashboard Departments 
-<img width="939" height="421" alt="image" src="https://github.com/user-attachments/assets/62db1c11-22f4-4fd6-80e4-7d2a3d4eaa14" />
-### Dashboard Map
-<img width="941" height="441" alt="image" src="https://github.com/user-attachments/assets/c9e7a5ed-6656-4f9d-8887-cca7f8a45250" />
+<img width="952" height="440" alt="image" src="https://github.com/user-attachments/assets/3541c84a-05a2-4628-9170-11a47cf21dea" />
+
 ### Submit Complaint form
-<img width="953" height="283" alt="image" src="https://github.com/user-attachments/assets/d3a5f239-aac8-45a3-ac71-ff96a7762ef6" />
+<img width="467" height="442" alt="image" src="https://github.com/user-attachments/assets/9c09dba5-16a8-4f6b-b0f6-8071c293e2f7" />
+
+### Location Map
+<img width="941" height="434" alt="image" src="https://github.com/user-attachments/assets/f77ab3dd-e5dc-42f2-af58-f9b02923c8ba" />
+
+
 ### Live Demo
 https://public-grievance-tracker.netlify.app/
