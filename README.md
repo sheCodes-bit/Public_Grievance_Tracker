@@ -52,4 +52,4 @@ The **Public Grievance Tracker** is a full-stack web application that provides a
 
 
 ### Live Demo
-https://public-grievance-tracker.netlify.app/
+https://publicgrievancetracker.netlify.app/
