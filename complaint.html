@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Submit Complaint</title>
+
+<link rel="stylesheet" href="complaint.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">Grievance Portal</div>
+
+<ul>
+<li><a href="dashboard.html">Home</a></li>
+<li><a href="departments.html">Departments</a></li>
+<li><button id="logoutBtn">Logout</button></li>
+</ul>
+
+</nav>
+
+<section class="form-section">
+
+<div class="form-container">
+
+<!-- FORM -->
+<div class="form-box">
+
+<h2>Submit Complaint</h2>
+
+<form id="complaintForm">
+
+<div class="form-group">
+<label>Department</label>
+<select id="department" required>
+<option value="">Select</option>
+<option>Road Issues</option>
+<option>Electricity</option>
+<option>Water</option>
+<option>Sanitation</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Province</label>
+
+<select id="province" required>
+<option value="">Select Province</option>
+<option value="Punjab">Punjab</option>
+<option value="Sindh">Sindh</option>
+<option value="KPK">KPK</option>
+<option value="Balochistan">Balochistan</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>City</label>
+
+<select id="city" required>
+<option value="">Select City</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Area</label>
+<input type="text" id="area" placeholder="Enter area" required>
+</div>
+
+<div class="form-group">
+<label>Complaint Title</label>
+<input type="text" id="title" required>
+</div>
+
+<div class="form-group">
+<label>Description</label>
+<textarea id="description" rows="4" required></textarea>
+</div>
+
+<div class="form-group">
+<label>Upload Images (optional)</label>
+<input type="file" id="images" multiple accept="image/*">
+</div>
+
+<button type="submit" class="submit-btn">Submit Complaint</button>
+
+
+</form>
+
+</div>
+
+<!-- MAP -->
+<div class="map-box">
+<h3>Select Location</h3>
+<div id="map"></div><br/>
+<p>Drag marker or use GPS</p><br/>
+<button id="gpsBtn">Use My Location</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- GOOGLE MAPS API -->
+
+
+<script>
+window.initMap = function () {
+
+const defaultLocation = { lat: 31.5204, lng: 74.3587 };
+
+const map = new google.maps.Map(document.getElementById("map"), {
+zoom: 6,
+center: defaultLocation
+});
+
+const marker = new google.maps.Marker({
+position: defaultLocation,
+map: map,
+draggable: true
+});
+
+window.selectedLocation = defaultLocation;
+
+marker.addListener("dragend", () => {
+window.selectedLocation = {
+lat: marker.getPosition().lat(),
+lng: marker.getPosition().lng()
+};
+});
+
+};
+</script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwdyQQ5q85SpaOf_EoVffgUkZ5PO6ReJk&callback=initMap"
+async defer></script>
+<script src="complaint.js"></script>
+
+</body>
+</html>

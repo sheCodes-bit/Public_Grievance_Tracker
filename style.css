@@ -250,6 +250,18 @@ transform:scale(1.05);
 box-shadow:0 6px 15px rgba(0,0,0,0.2);
 
 }
+.registerBtn {
+background: grey;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.registerBtn:hover {
+background: grey;
+}
 
 
 
