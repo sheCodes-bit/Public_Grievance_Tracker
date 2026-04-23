@@ -1,3 +1,6 @@
+### Live Demo
+https://publicgreivancetracker.netlify.app/
+
 ## Public Grievance Tracker
 
 The **Public Grievance Tracker** is a full-stack web application that provides a transparent and efficient platform for citizens to report and track public issues. It helps bridge the gap between the public and authorities by enabling faster complaint registration, monitoring, and resolution.
