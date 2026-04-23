@@ -50,6 +50,8 @@ The **Public Grievance Tracker** is a full-stack web application that provides a
 ### Location Map
 <img width="941" height="434" alt="image" src="https://github.com/user-attachments/assets/f77ab3dd-e5dc-42f2-af58-f9b02923c8ba" />
 
+### Admin Dashboard
+<img width="941" height="434" alt="image" src="https://github.com/user-attachments/assets/9eb07c21-fb06-4554-b838-a6db94ece31c" />
 
-### Live Demo
-https://publicgrievancetracker.netlify.app/
+
+
